@@ -1,5 +1,5 @@
 $(window).load(function() {
-  gapi.client.setApiKey('AIzaSyCW0d9UbZYXZ8r52U4tYnvzvvFa6QA9s4w');
+  gapi.client.setApiKey('AIzaSyCBtwEiRDkKfMr2CdYnrHARVWqH3sfNZHc');
   gapi.client.load("youtube", "v3", function() {
     $('#search-button').attr('disabled', false);
   });
@@ -24,10 +24,10 @@ function search() {
     for (var i = 0; i < results.items.length; i++) {
       var video_title = results.items[i]["snippet"]["title"];
       var video_id = results.items[i]["id"]["videoId"];
-      $('#search-container').append("<h4>" + results.items[i]["snippet"][
+      $('#search-container').append("<h5>" + results.items[i]["snippet"][
           "title"
         ] +
-        "</h4>");
+        "</h5>");
       $('#search-container').append("<iframe" + " " +
         "src='http://www.youtube.com/embed/" + video_id + "'" + " " +
         "width='600'" + " " + "height='400'" + " " + "allowfullscreen " +

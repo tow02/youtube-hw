@@ -1,0 +1,23 @@
+body {
+  padding-top: 70px;
+}
+
+.input-group {
+  position: absolute;
+  top: 50%;
+  vertical-align: middle;
+  margin-top: 7.5px;
+}
+
+body > .container {
+  padding 60px 15px 0;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px
+}

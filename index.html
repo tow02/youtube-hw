@@ -4,14 +4,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/src/css/main.css">
     <title>YouTube-HW | Paween Theanvanichpant</title>
   </head>
   <body>
-    <div id="buttons">
-      <label> <input id="query" value="" type="text"/><button id="search-button" disabled onclick="search()">Search</button></label>
-    </div>
-    <div id="search-container">
-    </div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">YTHW</a>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input id="query" class="form-control" type="text" placeholder="Search"/>
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-primary" id="search-button" disabled onclick="search()">
+                  <i class="fa fa-search"></i>
+                </button>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <center>
+      <div id="search-container">
+      </div>
+    </center>
+
+    <br>
+    <br>
+    <br>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">
+          <i class="fa fa-copyright"></i> Paween Theanvanichpant, Mahidol University International College
+        </p>
+      </div>
+    </footer>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="/src/js/search.js"></script>
     <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
