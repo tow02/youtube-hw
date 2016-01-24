@@ -7,6 +7,14 @@ $(window).load(function() {
     event.preventDefault();
     search();
   });
+
+  $('.form-control').keypress(function(event) {
+    if (event.which == 13) {
+      event.preventDefault();
+      $('.form-control').blur();
+      search();
+    }
+  });
 });
 
 // Search for a specified string.
