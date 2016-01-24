@@ -15,9 +15,18 @@ body > .container {
 
 .container .text-muted {
   margin: 20px 0;
+  margin-left: 30px;
 }
 
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px
+}
+
+footer a {
+  color: #777;
+}
+
+footer a:hover {
+  color: #222;
 }
