@@ -23,6 +23,12 @@ body > .container {
   padding-left: 15px
 }
 
+footer {
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+}
+
 footer a {
   color: #777;
 }
