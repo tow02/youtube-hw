@@ -32,9 +32,7 @@ function search() {
     for (var i = 0; i < results.items.length; i++) {
       var video_title = results.items[i]["snippet"]["title"];
       var video_id = results.items[i]["id"]["videoId"];
-      $('#search-container').append("<h5>" + results.items[i]["snippet"][
-          "title"
-        ] +
+      $('#search-container').append("<h5>" + video_title +
         "</h5>");
       $('#search-container').append("<iframe" + " " +
         "src='http://www.youtube.com/embed/" + video_id + "'" + " " +
